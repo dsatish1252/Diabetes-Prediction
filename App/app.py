@@ -7,11 +7,12 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 # Load models and scaler
-scaler = joblib.load('scaler.pkl')
-log_clf = joblib.load('logistic_model.pkl')
-rf_clf = joblib.load('random_forest_model.pkl')
-gb_clf = joblib.load('gradient_boost_model.pkl')
-knn_clf = joblib.load('knn_model.pkl')
+scaler = joblib.load('path/to/scaler.pkl')
+log_clf = joblib.load('path/to/logistic_model.pkl')
+rf_clf = joblib.load('path/to/random_forest_model.pkl')
+gb_clf = joblib.load('path/to/gradient_boost_model.pkl')
+knn_clf = joblib.load('path/to/knn_model.pkl')
+
 
 # Load dataset
 df = pd.read_csv('diabetes_prediction_dataset.csv')
